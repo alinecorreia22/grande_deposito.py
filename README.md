@@ -1,26 +1,16 @@
-# Desafio Python: O Grande Depósito
+Desafios Python: O grande depósito
 
-valor = float(input())
+Descrição do sexto desafio: Você foi contratado por um banco para desenvolver um programa que auxilie seus clientes a realizar depósitos em suas contas.
+O programa deve solicitar ao cliente o valor do depósito e verificar se o valor é válido. Se o valor for maior do que zero, o programa deve adicionar o valor ao saldo da conta.
+Caso contrário, o programa deverá exibir uma mensagem de erro. O programa deve solicitar apenas uma vez o valor do depósito.
 
-if valor > 0:
-    saldo_formatado = "{:.2f}".format(valor).replace(',', '.')  # Formata o valor com 2 casas decimais e substitui ',' por '.'
-    print("Deposito realizado com sucesso!\nSaldo atual: R$", saldo_formatado)
-    
-elif valor == 0:
-    print("Encerrando o programa...")
-   
-else:
-    print("Valor invalido! Digite um valor maior que zero.")
+Entrada
+O programa deve utilizar o Scanner para receber o valor do depósito digitalizado pelo cliente. Os valores podem ser decimais, representando valor em reais.
 
-# Exemplo
+Saída
+O programa deve exibir uma mensagem de sucesso quando um valor de depósito válido para informado e o saldo da conta para atualizado.
+Se o valor for "0", deverá imprimir uma mensagem encerrando o programa. Caso um valor inválido seja digitado, o programa deverá exibir uma mensagem de erro solicitando um novo valor.
 
-valor = float(input(-100))
-
-if valor > 0:
-    saldo_formatado = "{:.2f}".format(valor).replace(',', '.')  # Formata o valor com 2 casas decimais e substitui ',' por '.'
-    print("Deposito realizado com sucesso!\nSaldo atual: R$", saldo_formatado)
-    
-elif valor == 0:
     print("Encerrando o programa...")
    
 else:
